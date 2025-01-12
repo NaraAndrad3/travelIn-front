@@ -461,7 +461,7 @@ body {
     }
 
     .card {
-        width: calc(50% - 20px); /* 2 cards por linha */
+        width: calc(100% - 20px);
     }
 
     .cta-content h2 {

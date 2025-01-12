@@ -82,6 +82,7 @@ body {
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 1001;
 }
 
 .hamburger span {

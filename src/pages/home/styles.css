@@ -403,9 +403,7 @@ body {
     .card {
         width: calc(33.33% - 20px);
     }
-}
 
-@media (max-width: 768px) {
     .nav {
         display: none;
     }
@@ -431,6 +429,9 @@ body {
         height: 3px;
         background-color: #fff;
     }
+}
+
+@media (max-width: 768px) {
 
     .hero{
         margin-top: 200px;

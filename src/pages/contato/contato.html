@@ -8,14 +8,19 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo"><img src="/frontend/src/assets/logo1.png"></div>
+        <div class="logo"><img src="/src/assets/logo1.png"></div>
+        <button class="hamburger" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="nav">
-            <div class="nav-item"><a href="/frontend/src/pages/home/home.html">Início</a></div>
-            <div class="nav-item"><a href="/frontend/src/pages/sobre-nos/sobre-nos.html">Sobre nós</a></div>
-            <div class="nav-item"><a href="/frontend/src/pages/contato/contato.html">Contato</a></div>
-            <div class="button"><a href="/frontend/src/pages/pagina-inicial/pagina-inicial.html">Login</a></div>
+            <div class="nav-item"><a href="/src/pages/home/home.html">Início</a></div>
+            <div class="nav-item"><a href="/src/pages/sobre-nos/sobre-nos.html">Sobre nós</a></div>
+            <div class="nav-item"><a href="/src/pages/contato/contato.html">Contato</a></div>
+            <div class="button"><a href="/src/pages/pagina-inicial/pagina-inicial.html">Login</a></div>
         </nav>
-    </header>
+    </header>    
 
     <section class="hero-contact">
         <div class="container">
@@ -81,5 +86,17 @@
             <p>&copy; 2024 Trip Planner. Transformando sonhos em viagens.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger");
+            const nav = document.querySelector(".nav");
+    
+            hamburger.addEventListener("click", () => {
+                nav.classList.toggle("active");
+                hamburger.classList.toggle("open");
+            });
+        });
+    </script>
 </body>
 </html>

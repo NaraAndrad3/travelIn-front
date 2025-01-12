@@ -423,7 +423,7 @@ body {
     }
 
     .hamburger {
-        display: flex;
+        display: block !important;  /* Força a exibição do hambúrguer */
     }
 
     .hero{
